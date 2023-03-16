@@ -10,7 +10,7 @@ class RecipeApi {
         {"limit": "24", "start": "0", "tag": "list.recipe.popular"});
 
     final response = await http.get(uri, headers: {
-      "x-rapidapi-key": "dc5ec6c7d9msh278927a51996521p10e84ajsn0ba463c8e835",
+      "x-rapidapi-key": "YOUR API KEY HERE",
       "x-rapidapi-host": "yummly2.p.rapidapi.com"
       //"useQueryString": "true"
     });
@@ -25,21 +25,3 @@ class RecipeApi {
     return Recipe.recipesFromSnapshot(temp);
   }
 }
-
-/*const axios = require("axios");
-
-const options = {
-  method: 'GET',
-  url: 'https://yummly2.p.rapidapi.com/feeds/list',
-  params: {limit: '24', start: '0'},
-  headers: {
-    'X-RapidAPI-Key': 'YOUR API KEY HERE',
-    'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
-  }
-};
-
-axios.request(options).then(function (response) {
-	console.log(response.data);
-}).catch(function (error) {
-	console.error(error);
-});*/
