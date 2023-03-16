@@ -33,7 +33,7 @@ const options = {
   url: 'https://yummly2.p.rapidapi.com/feeds/list',
   params: {limit: '24', start: '0'},
   headers: {
-    'X-RapidAPI-Key': 'dc5ec6c7d9msh278927a51996521p10e84ajsn0ba463c8e835',
+    'X-RapidAPI-Key': 'YOUR API KEY HERE',
     'X-RapidAPI-Host': 'yummly2.p.rapidapi.com'
   }
 };
